@@ -3,9 +3,9 @@ from conans import ConanFile, CMake, tools
 class HelloConan(ConanFile):
     name = "myTest"
     version = "0.1"
-    license = "<Put the package license here>"
+    license = "HEM package license"
     url = "https://github.com/adziwinski/myTest"
-    description = "<Description of hello here>"
+    description = "test package"
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
     default_options = {"shared": False}
