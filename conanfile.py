@@ -32,7 +32,7 @@ conan_basic_setup()''')
         # self.run("cmake --build . %s" % cmake.build_config)
 
     def package(self):
-        self.copy("*.h", dst="include", src="myTest")
+        self.copy("*.cpp", dst="include", src="myTest")
         self.copy("*myTest.lib", dst="lib", keep_path=False)
         self.copy("*.dll", dst="bin", keep_path=False)
         self.copy("*.so", dst="lib", keep_path=False)
